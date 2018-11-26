@@ -1,0 +1,17 @@
+{
+  "name": "overseer-backup",
+  "version": "0.0.1",
+  "description": "Backup Overseer data files",
+  "main": "app.js",
+  "scripts": {
+    "start": "forever start app",
+    "stop": "forever stop app",
+    "deploy": "npm stop && git pull && npm start",
+    "dev": "node app"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "archiver": "^3.0.0"
+  }
+}

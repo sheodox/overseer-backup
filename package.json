@@ -4,8 +4,8 @@
   "description": "Backup Overseer data files",
   "main": "app.js",
   "scripts": {
-    "start": "forever start app",
-    "stop": "forever stop app",
+    "start": "forever start app.js",
+    "stop": "forever stop app.js",
     "deploy": "npm stop && git pull && npm start",
     "dev": "node app"
   },

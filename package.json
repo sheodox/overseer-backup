@@ -7,11 +7,15 @@
     "start": "forever start app.js",
     "stop": "forever stop app.js",
     "deploy": "npm stop && git pull && npm start",
-    "dev": "node app"
+    "dev": "node app",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "archiver": "^3.0.0"
-  }
+    "archiver": "^3.0.0",
+    "snyk": "^1.316.1"
+  },
+  "snyk": true
 }
